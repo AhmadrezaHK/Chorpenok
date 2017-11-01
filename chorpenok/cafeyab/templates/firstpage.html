@@ -87,7 +87,14 @@
 
         </div>
         <div class="col-md-6 list-coffee">
-
+            <h1>Cafes</h1>
+            <ul>
+                {% for cafe in object_list %}
+                    <li>{{ cafe.name }} - {{ cafe.description }}</li>
+                {% empty %}
+                    <li>No cafe.</li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>

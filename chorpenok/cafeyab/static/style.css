@@ -1,0 +1,6 @@
+html,body,.modal{
+    direction:rtl;
+}
+.modal .form-group{
+    text-align:right;
+}
