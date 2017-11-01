@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^list/$', include('cafe.urls', namespace='list')),
     url(r'^', include('cafeyab.urls', namespace='cafeyab'))
 ]
